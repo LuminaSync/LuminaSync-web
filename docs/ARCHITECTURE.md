@@ -10,19 +10,18 @@ Single-purpose **marketing and distribution** surface for LuminaSync. It does no
 |------|------|
 | Host | [Vercel](https://vercel.com) connected to `LuminaSync/LuminaSync-web` |
 | Branch | `main` → production (maintainer-only repository) |
-| Domain | Custom domain TBD (configure in Vercel + DNS) |
+| Domain | [luminasync.vercel.app](https://luminasync.vercel.app); optional custom `luminasync.vercel.com` in Vercel |
 
-## Suggested stack (implementation)
+## Stack (implemented)
 
-- **Next.js** (static export or SSR) or **Astro** for content-heavy landing with minimal JS.
-- Content in MDX or components under `src/` / `app/`.
-- `public/` for `og-image.png`, favicon, platform icons.
+- **Static HTML** at repo root: `index.html`, `styles.css`, `logo-mark.svg`, and committed PNG/ICO brand files.
+- Deploy: Vercel, no build step, output directory `.`.
 
 ## Page map
 
 | Route | Purpose |
 |-------|---------|
-| `/` | Hero, value proposition, screenshot/GIF placeholder |
+| `/` | Coming soon hero, GitHub links, brand mark |
 | `/#features` | Per-game profiles, tray app, mobile remote (planned) |
 | `/#download` | Windows, Linux, Android, iOS buttons |
 | `/#open-source` | Links to core, mobile, PoC (archived) repos |

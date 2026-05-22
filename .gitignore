@@ -1,1 +1,3 @@
 .cursor/
+.vercel
+node_modules/

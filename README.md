@@ -40,6 +40,10 @@ Open [http://localhost:3000](http://localhost:3000).
 | [VibranceFlow-mobile](https://github.com/VibranceFlow/VibranceFlow-mobile) | Phone remote (GPL-3.0) |
 | [VibranceFlow-web](https://github.com/VibranceFlow/VibranceFlow-web) | This site (MIT) |
 
+## Support
+
+- [Ko-fi — support VibranceFlow](https://ko-fi.com/fabio_monreal)
+
 ## Documentation
 
 | File | Description |

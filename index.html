@@ -3,38 +3,111 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VibranceFlow — Per-game display profiles for Windows</title>
+    <title>VibranceFlow — Per‑app display color on Windows · Android remote</title>
     <meta
       name="description"
-      content="VibranceFlow applies vibrance, brightness, contrast, gamma, and hue when your games and apps are in focus on Windows 11. Per-.exe profiles — coming soon."
+      content="Download VibranceFlow for Windows 10/11 and Android. Open source alternative to VibranceGUI: LAN pairing, sliders, firewall-friendly. Contribute on GitHub."
     />
+    <meta
+      name="keywords"
+      content="VibranceFlow, VibranceGUI alternative, Windows color profile, per-app display, Android remote, open source, GitHub, contributors"
+    />
+    <meta name="author" content="Fabio Monreal" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://vibranceflow.vercel.app/" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vibranceflow.vercel.app/" />
-    <meta property="og:title" content="VibranceFlow" />
+    <meta property="og:title" content="VibranceFlow — Windows + Android color control" />
     <meta
       property="og:description"
-      content="Per-game and per-app color profiles on Windows 11. Adjust from your phone over LAN — coming soon."
+      content="Official site: download Windows .exe and Android .apk, verify on VirusTotal, pair over Wi‑Fi. Open source — pull requests welcome."
     />
     <meta property="og:image" content="https://vibranceflow.vercel.app/og-image.png" />
+    <meta property="og:site_name" content="VibranceFlow" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="VibranceFlow" />
+    <meta name="twitter:title" content="VibranceFlow — Windows + Android" />
     <meta
       name="twitter:description"
-      content="Display profiles for games and apps on Windows. Coming soon."
+      content="Free downloads for Windows and Android. Open source display profiles and LAN remote. Linux and iOS in development."
     />
     <meta name="theme-color" content="#0a0a0f" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/logo-mark.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "VibranceFlow",
+            "url": "https://vibranceflow.vercel.app/",
+            "description": "Official VibranceFlow site: Windows desktop app with Android LAN remote. Open source (GPL‑3.0 apps; MIT site)."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "VibranceFlow",
+            "applicationCategory": "DesktopApplication",
+            "operatingSystem": "Windows 10, Windows 11",
+            "downloadUrl": "https://github.com/VibranceFlow/VibranceFlow-core/releases/download/v1.0.0/VibranceFlow.exe",
+            "description": "Windows tray app for per-app vibrance, brightness, contrast, gamma, and hue with NVAPI/Win32. Pair Android over LAN WebSocket.",
+            "url": "https://vibranceflow.vercel.app/",
+            "softwareHelp": "https://github.com/VibranceFlow/VibranceFlow-core#readme",
+            "codeRepository": "https://github.com/VibranceFlow/VibranceFlow-core",
+            "author": {
+              "@type": "Person",
+              "name": "Fabio Monreal",
+              "email": "fabio.monreal@outlook.com",
+              "sameAs": "https://www.linkedin.com/in/fabiomonreal/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "VibranceFlow",
+              "url": "https://vibranceflow.vercel.app/"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "VibranceFlow Mobile",
+            "applicationCategory": "MobileApplication",
+            "operatingSystem": "Android",
+            "downloadUrl": "https://github.com/VibranceFlow/VibranceFlow-mobile/releases/download/v1.0.0/vibranceflow-release.apk",
+            "description": "Android companion to control VibranceFlow Core sliders, pairing, observer, and per-app audio over encrypted LAN.",
+            "url": "https://vibranceflow.vercel.app/",
+            "softwareHelp": "https://github.com/VibranceFlow/VibranceFlow-mobile#readme",
+            "codeRepository": "https://github.com/VibranceFlow/VibranceFlow-mobile",
+            "author": {
+              "@type": "Person",
+              "name": "Fabio Monreal",
+              "sameAs": "https://www.linkedin.com/in/fabiomonreal/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "VibranceFlow",
+              "url": "https://vibranceflow.vercel.app/"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="glow glow-a" aria-hidden="true"></div>
     <div class="glow glow-b" aria-hidden="true"></div>
 
     <header class="header">
-      <a class="brand" href="/" aria-label="VibranceFlow home">
+      <a class="brand" href="https://vibranceflow.vercel.app/" aria-label="VibranceFlow official site">
         <picture>
           <source srcset="/logo.png" type="image/png" />
           <img class="brand-img" src="/logo-mark.svg" alt="" width="48" height="48" />
@@ -44,74 +117,145 @@
     </header>
 
     <main class="main">
-      <p class="badge">Coming soon</p>
-      <h1 class="title">Color profiles for every game and app you play</h1>
+      <p class="badge">Free · open source</p>
+      <h1 class="title">Better color for every app on Windows—with your phone nearby</h1>
       <p class="lead">
-        Set vibrance, brightness, contrast, gamma, and hue per
-        <code>.exe</code> — competitive games, MMOs, emulators, or any fullscreen app.
-        VibranceFlow applies the right look when that window is in focus on Windows 11 and
-        restores your desktop when you alt-tab out.
+        VibranceFlow sets vibrance, brightness, contrast, gamma, and hue <strong>per program</strong> on Windows.
+        Designed for gamers, designers, editors, and anyone who wants richer color without juggling settings.
+        The Android companion controls your PC over the same Wi‑Fi after a quick LAN pair (QR or 6‑digit PIN).
       </p>
 
-      <div class="hero-visual" aria-hidden="true">
-        <picture>
-          <source srcset="/logo-hero.png" type="image/png" />
-          <img class="hero-logo hero-logo--svg" src="/logo-mark.svg" alt="" width="160" height="160" />
-        </picture>
+      <nav class="links links-downloads" aria-label="Official downloads">
+        <a
+          class="btn btn-primary btn-download"
+          href="https://github.com/VibranceFlow/VibranceFlow-core/releases/download/v1.0.0/VibranceFlow.exe"
+          rel="noopener noreferrer"
+          >Download for Windows 10/11 (.exe)</a
+        >
+        <a
+          class="btn btn-secondary btn-download"
+          href="https://github.com/VibranceFlow/VibranceFlow-mobile/releases/download/v1.0.0/vibranceflow-release.apk"
+          rel="noopener noreferrer"
+          >Download for Android (.apk)</a
+        >
+      </nav>
+
+      <div class="hashes">
+        <p class="hash-line">
+          <span class="hash-label">Windows SHA‑256:</span><br />
+          <code class="hash-value">
+            <a href="https://www.virustotal.com/gui/file/9ad23e5a5d2555c60e3d8461a95c34fe02b8760b6d3d9fd60fb354bea3d7f301" rel="noopener noreferrer">
+              9ad23e5a5d2555c60e3d8461a95c34fe02b8760b6d3d9fd60fb354bea3d7f301
+            </a>
+          </code>
+          <span class="hash-meta"> · <a href="https://www.virustotal.com/gui/file/9ad23e5a5d2555c60e3d8461a95c34fe02b8760b6d3d9fd60fb354bea3d7f301" rel="noopener noreferrer">VirusTotal</a></span>
+        </p>
+        <p class="hash-line">
+          <span class="hash-label">Android SHA‑256:</span><br />
+          <code class="hash-value">
+            <a href="https://www.virustotal.com/gui/file/8418c3cde2d31a0a63a6c3e96488e57ee47f89e2833051e336440745f2c2bd49" rel="noopener noreferrer">
+              8418c3cde2d31a0a63a6c3e96488e57ee47f89e2833051e336440745f2c2bd49
+            </a>
+          </code>
+          <span class="hash-meta"> · <a href="https://www.virustotal.com/gui/file/8418c3cde2d31a0a63a6c3e96488e57ee47f89e2833051e336440745f2c2bd49" rel="noopener noreferrer">VirusTotal</a></span>
+        </p>
+        <p class="hashes-hint">
+          Compare with <code>Get-FileHash</code> on Windows or your platform checksum tool. Release artifacts also ship with published hashes on GitHub.
+        </p>
       </div>
 
       <ul class="features">
         <li>
           <span class="feature-icon" aria-hidden="true">◆</span>
           <span
-            ><strong>Per-game profiles</strong> — add running processes or pick any
-            <code>.exe</code>; observer switches automatically</span
+            ><strong>Per‑app profiles</strong> — pick a running process or any <code>.exe</code>; switches when that window is in focus</span
           >
         </li>
         <li>
           <span class="feature-icon" aria-hidden="true">◇</span>
           <span
-            ><strong>VibranceFlow Core</strong> — Windows 11 tray app (open source)</span
+            ><strong>Open source &amp; privacy‑minded</strong> — no cloud account; LAN‑only control with encrypted payloads (Fernet)</span
           >
         </li>
         <li>
           <span class="feature-icon" aria-hidden="true">◇</span>
           <span
-            ><strong>VibranceFlow Mobile</strong> — tweak sliders from your phone on the same
-            Wi‑Fi, no Alt+Tab (open source)</span
+            ><strong>Android remote</strong> — sliders, program list, observer, reset, and per‑app audio when the PC sees a live session</span
           >
+        </li>
+        <li>
+          <span class="feature-icon" aria-hidden="true">◇</span>
+          <span
+            ><strong>Firewall tip</strong> — allow VibranceFlow on <em>private</em> networks; WebSocket uses port <strong>8765</strong></span
+          >
+        </li>
+        <li>
+          <span class="feature-icon" aria-hidden="true">◇</span>
+          <span><strong>Roadmap</strong> — Linux &amp; iOS clients in development</span>
         </li>
       </ul>
 
-      <nav class="links" aria-label="Project links">
-        <a
-          class="btn btn-primary"
-          href="https://github.com/VibranceFlow/VibranceFlow-core"
-          rel="noopener noreferrer"
-          >GitHub — Core</a
+      <nav class="links links-repos" aria-label="Source code on GitHub">
+        <a class="btn btn-ghost" href="https://github.com/VibranceFlow/VibranceFlow-core" rel="noopener noreferrer"
+          >Repository — Core (Windows)</a
         >
-        <a
-          class="btn btn-secondary"
-          href="https://github.com/VibranceFlow/VibranceFlow-mobile"
-          rel="noopener noreferrer"
-          >GitHub — Mobile</a
+        <a class="btn btn-ghost" href="https://github.com/VibranceFlow/VibranceFlow-mobile" rel="noopener noreferrer"
+          >Repository — Mobile (Android)</a
         >
-        <a
-          class="btn btn-ghost"
-          href="https://github.com/VibranceFlow"
-          rel="noopener noreferrer"
-          >Organization</a
-        >
+        <a class="btn btn-ghost" href="https://github.com/VibranceFlow" rel="noopener noreferrer">GitHub organization</a>
       </nav>
 
+      <section class="card" aria-labelledby="start-title">
+        <h2 id="start-title">Quick start</h2>
+        <p>
+          <strong>Windows:</strong> run <code>VibranceFlow.exe</code>. If SmartScreen appears, use <em>More info</em> and only continue for builds from the official GitHub release.
+          Add games or apps, tune sliders, then open <strong>Pair Mobile</strong>.
+        </p>
+        <p>
+          <strong>Android:</strong> install the APK, stay on the same Wi‑Fi as the PC, then pair via QR (recommended) or IP + 6‑digit code.
+          Sideload warnings are normal outside the Play Store.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="contrib-title">
+        <h2 id="contrib-title">Contributors welcome</h2>
+        <p>
+          Development and packaging docs live in each repo:
+          <a href="https://github.com/VibranceFlow/VibranceFlow-core/blob/main/CONTRIBUTING.md" rel="noopener noreferrer">Core CONTRIBUTING</a>
+          ·
+          <a href="https://github.com/VibranceFlow/VibranceFlow-mobile/blob/main/CONTRIBUTING.md" rel="noopener noreferrer">Mobile CONTRIBUTING</a>.
+          Issues and pull requests are welcome.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="support-title">
+        <h2 id="support-title">Support the project</h2>
+        <p>
+          Donations help with code‑signing, store publishing, and more platforms—see milestones on Ko‑fi.
+        </p>
+        <a class="btn btn-primary btn-donate" href="https://ko-fi.com/fabio_monreal" rel="noopener noreferrer"
+          >Support on Ko‑fi</a
+        >
+      </section>
+
       <p class="note">
-        Downloads for Windows, Linux, and app stores will appear here when releases are
-        published. Follow development on GitHub.
+        See also the full README on
+        <a href="https://github.com/VibranceFlow/VibranceFlow-core#readme" rel="noopener noreferrer">Core</a>
+        and
+        <a href="https://github.com/VibranceFlow/VibranceFlow-mobile#readme" rel="noopener noreferrer">Mobile</a>
+        for troubleshooting, security notes, and release pages.
       </p>
     </main>
 
     <footer class="footer">
-      <p>© VibranceFlow · Site MIT · Apps GPL-3.0</p>
+      <p class="footer-main">
+        © VibranceFlow — Fabio Monreal (<a href="mailto:fabio.monreal@outlook.com">fabio.monreal@outlook.com</a>) · All
+        rights reserved · Site MIT · Apps GPL‑3.0 ·
+        <a href="https://www.linkedin.com/in/fabiomonreal/" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+      <p class="footer-note">
+        Unpackaged / unsigned binaries may occasionally trigger antivirus heuristics; the project publishes open‑source code and VirusTotal links for transparency. If flagged, verify the SHA‑256 and report a false positive to your vendor—see the Core README.
+      </p>
     </footer>
   </body>
 </html>
